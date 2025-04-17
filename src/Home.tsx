@@ -18,12 +18,12 @@ export function Home() {
 					<span class='mt-1'>COUNTERS</span>
 				</h1>
 			</header>
-			<main class='w-full flex flex-col items-center justify-center px-16 italic'>
+			<main class='w-full flex flex-grow flex-col items-center justify-center px-16 italic'>
 				<div
 					class='flex gap-x-2 gap-y-4 w-full max-w-5xl justify-between'
 					classList={{
-						'mt-16': !selected(),
-						'mt-8': !!selected()
+						'-mt-16': !selected(),
+						'-mt-12': !!selected()
 					}}
 				>
 					<For each={roles}>
@@ -82,7 +82,7 @@ export function Home() {
 				</div>
 				<Show when={selected()}>
 					{hero => (
-						<div class='flex w-full mt-12 gap-10'>
+						<div class='flex w-full max-w-5xl mt-12 gap-10'>
 							<For each={roles}>
 								{role => {
 									const counterName = createMemo(() =>

@@ -12,10 +12,10 @@ export function Home() {
 		<div class='min-h-screen flex flex-col bg-slate-500 select-none'>
 			<header class='flex justify-center pt-2'>
 				<h1 class='text-4xl/9 text-white flex gap-2'>
-					<span class='mt-1'>Overwatch® </span>
+					<span class='mt-1'>OVERWATCH® </span>
 					<div class='bg-orange-500 px-1 pt-1 rounded-md'>2</div>
 					<div class='w-4' />
-					<span class='mt-1'>COUNTER PICK</span>
+					<span class='mt-1'>COUNTERS</span>
 				</h1>
 			</header>
 			<main class='w-full flex flex-col items-center justify-center px-16 italic'>

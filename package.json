@@ -11,14 +11,14 @@
 		"validate": "tsc -b && biome check --fix"
 	},
 	"dependencies": {
-		"solid-js": "1.9.5"
+		"solid-js": "1.9.6"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@tailwindcss/vite": "4.1.3",
-		"tailwindcss": "4.1.3",
+		"@tailwindcss/vite": "4.1.5",
+		"tailwindcss": "4.1.5",
 		"typescript": "5.8.3",
-		"vite": "6.2.7",
+		"vite": "6.3.4",
 		"vite-plugin-solid": "2.11.6"
 	}
 }

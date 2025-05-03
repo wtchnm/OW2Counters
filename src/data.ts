@@ -5,6 +5,7 @@ export interface Hero {
 }
 
 export const roles = ['TANK', 'DAMAGE', 'SUPPORT'] as const
+export type Role = (typeof roles)[number]
 
 export const heroes = [
 	{

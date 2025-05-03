@@ -54,6 +54,11 @@ export const heroes = [
 		counters: ['D.VA', 'SOLDIER', 'BAPTISTE']
 	},
 	{
+		name: 'FREJA',
+		role: 'DAMAGE',
+		counters: ['D.VA', 'ASHE', 'ANA']
+	},
+	{
 		name: 'GENJI',
 		role: 'DAMAGE',
 		counters: ['WINSTON', 'SYMMETRA', 'MOIRA']

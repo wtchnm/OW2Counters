@@ -1,5 +1,5 @@
-import {type Accessor, For, createMemo} from 'solid-js'
-import {type Hero, type Role, getHeroByName, roles} from '../data'
+import {type Accessor, createMemo, For} from 'solid-js'
+import {getHeroByName, type Hero, type Role, roles} from '../data'
 import {CounterPick} from './CounterPick'
 
 interface CounterPickListProps {
@@ -19,7 +19,7 @@ export function CounterPickList({hero}: CounterPickListProps) {
 	})
 
 	return (
-		<div class='flex w-full max-w-5xl mt-12 gap-10'>
+		<div class='mt-12 flex w-full max-w-5xl gap-10'>
 			<For each={roles}>
 				{role => <CounterPick name={() => countersByRole().get(role)} />}
 			</For>

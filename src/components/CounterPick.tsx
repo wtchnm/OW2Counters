@@ -6,15 +6,15 @@ interface CounterPickProps {
 
 export function CounterPick({name}: CounterPickProps) {
 	return (
-		<div class='flex items-center gap-4 rounded-md bg-black/50 border-t-2 border-b-2 size-18 border-white relative w-full'>
+		<div class='relative flex size-18 w-full items-center gap-4 rounded-md border-white border-t-2 border-b-2 bg-black/50'>
 			<img
-				width={72}
-				height={68}
-				src={`${name()?.toLowerCase().replace(' ', '-')}.png`}
 				alt={name()}
 				class='pointer-events-none h-17 object-cover'
+				height={68}
+				src={`${name()?.toLowerCase().replace(' ', '-')}.png`}
+				width={72}
 			/>
-			<p class='text-white pt-1 pb-0.5 pl-1 pr-1.75 rounded-xs text-center text-3xl'>
+			<p class='rounded-xs pt-1 pr-1.75 pb-0.5 pl-1 text-center text-3xl text-white'>
 				{name()}
 			</p>
 		</div>

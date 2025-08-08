@@ -12,27 +12,27 @@ export function PickList({role, selected, setSelected}: PickListProps) {
 	return (
 		<section class='flex flex-col gap-2'>
 			<h2
-				class='text-3xl text-white border-b-4 border-white'
+				class='border-white border-b-4 text-3xl text-white'
 				classList={{
 					'text-3xl': !selected(),
-					'text-2xl/5': !!selected()
+					'text-2xl/5': Boolean(selected())
 				}}
 			>
 				{role}
 			</h2>
 			<div
-				class='flex flex-wrap gap-x-2 justify-center  flex-shrink-0'
+				class='flex flex-shrink-0 flex-wrap justify-center gap-x-2'
 				classList={{
 					'w-78': role === 'TANK',
 					'w-98': role === 'DAMAGE',
 					'w-58': role === 'SUPPORT',
 					'gap-y-7': !selected(),
-					'gap-y-2.25': !!selected()
+					'gap-y-2.25': Boolean(selected())
 				}}
 			>
 				<For each={heroesByRole[role]}>
 					{hero => (
-						<Pick hero={hero} selected={selected} onSelect={setSelected} />
+						<Pick hero={hero} onSelect={setSelected} selected={selected} />
 					)}
 				</For>
 			</div>

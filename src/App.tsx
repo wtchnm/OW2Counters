@@ -1,4 +1,4 @@
-import {For, Show, createSignal} from 'solid-js'
+import {createSignal, For, Show} from 'solid-js'
 import {CounterPickList} from './components/CounterPickList'
 import {Footer} from './components/Footer'
 import {Header} from './components/Header'
@@ -9,14 +9,14 @@ export function App() {
 	const [selected, setSelected] = createSignal<Hero>()
 
 	return (
-		<div class='min-h-screen flex flex-col bg-slate-500 select-none'>
+		<div class='flex min-h-screen select-none flex-col bg-slate-500'>
 			<Header />
-			<main class='w-full flex flex-grow flex-col items-center justify-center px-16 italic'>
+			<main class='flex w-full flex-grow flex-col items-center justify-center px-16 italic'>
 				<div
-					class='flex gap-x-2 gap-y-4 w-full max-w-5xl justify-between'
+					class='flex w-full max-w-5xl justify-between gap-x-2 gap-y-4'
 					classList={{
 						'-mt-16': !selected(),
-						'-mt-12': !!selected()
+						'-mt-12': Boolean(selected())
 					}}
 				>
 					<For each={roles}>

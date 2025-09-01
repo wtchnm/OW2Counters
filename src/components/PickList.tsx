@@ -10,7 +10,7 @@ interface PickListProps {
 
 export function PickList({role, selected, setSelected}: PickListProps) {
 	return (
-		<section class='flex flex-col gap-2'>
+		<section class='flex flex-col gap-2 max-md:mt-2'>
 			<h2
 				class='border-white border-b-4 text-3xl text-white'
 				classList={{
@@ -23,9 +23,9 @@ export function PickList({role, selected, setSelected}: PickListProps) {
 			<div
 				class='flex flex-shrink-0 flex-wrap justify-center gap-x-2'
 				classList={{
-					'w-78': role === 'TANK',
-					'w-98': role === 'DAMAGE',
-					'w-58': role === 'SUPPORT',
+					'md:w-78': role === 'TANK',
+					'md:w-98': role === 'DAMAGE',
+					'md:w-58': role === 'SUPPORT',
 					'gap-y-7': !selected(),
 					'gap-y-2.25': Boolean(selected())
 				}}

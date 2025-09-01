@@ -1,6 +1,6 @@
 export function Footer() {
 	return (
-		<footer class='absolute bottom-4 px-16 text-center text-sm text-white'>
+		<footer class='px-16 py-8 text-center text-sm text-white md:py-2'>
 			This is an independent, non-commercial fan project and is not affiliated
 			with, endorsed, or sponsored by Blizzard Entertainment®. All
 			Overwatch-related trademarks, characters, images, and other intellectual

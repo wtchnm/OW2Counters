@@ -19,7 +19,7 @@ export function CounterPickList({hero}: CounterPickListProps) {
 	})
 
 	return (
-		<div class='mt-12 flex w-full max-w-5xl gap-10'>
+		<div class='flex w-full max-w-5xl gap-2 max-md:mt-8 max-md:flex-col md:gap-10'>
 			<For each={roles}>
 				{role => <CounterPick name={() => countersByRole().get(role)} />}
 			</For>

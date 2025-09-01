@@ -11,14 +11,9 @@ export function App() {
 	return (
 		<div class='flex min-h-screen select-none flex-col bg-slate-500'>
 			<Header />
-			<main class='flex w-full flex-grow flex-col items-center justify-center px-16 italic'>
-				<div
-					class='flex w-full max-w-5xl justify-between gap-x-2 gap-y-4'
-					classList={{
-						'-mt-16': !selected(),
-						'-mt-12': Boolean(selected())
-					}}
-				>
+			<main class='flex w-full flex-grow flex-col items-center justify-center gap-4 px-4 italic'>
+				<Show when={selected()}>{hero => <CounterPickList hero={hero} />}</Show>
+				<div class='flex w-full max-w-5xl justify-between gap-x-2 gap-y-4 max-md:flex-col'>
 					<For each={roles}>
 						{role => (
 							<PickList
@@ -29,7 +24,6 @@ export function App() {
 						)}
 					</For>
 				</div>
-				<Show when={selected()}>{hero => <CounterPickList hero={hero} />}</Show>
 			</main>
 			<Footer />
 		</div>

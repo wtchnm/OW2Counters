@@ -8,11 +8,16 @@ interface PickProps {
 }
 
 export function Pick({hero, selected, onSelect}: PickProps) {
+	function onClick() {
+		window.scrollTo({top: 0, behavior: 'smooth'})
+		onSelect(hero)
+	}
+
 	return (
 		<button
 			aria-pressed={selected() === hero}
 			class='group relative size-18 cursor-pointer rounded-md border-white border-t-2 border-b-2 bg-black/50 aria-pressed:scale-115 aria-pressed:border-2 aria-pressed:border-orange-300 aria-pressed:bg-orange-600 aria-pressed:shadow-orange-300 aria-pressed:shadow-xl'
-			onClick={() => onSelect(hero)}
+			onClick={onClick}
 			type='button'
 		>
 			<img

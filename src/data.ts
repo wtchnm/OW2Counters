@@ -214,6 +214,11 @@ export const heroes = [
 		counters: ['ORISA', 'CASSIDY', 'ANA']
 	},
 	{
+		name: 'WUYANG',
+		role: 'SUPPORT',
+		counters: ['DOOMFIST', 'VENTURE', 'JUNO']
+	},
+	{
 		name: 'ZARYA',
 		role: 'TANK',
 		counters: ['RAMATTRA', 'BASTION', 'MOIRA']

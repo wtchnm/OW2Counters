@@ -28,7 +28,7 @@ export function Pick({hero, selected, onSelect}: PickProps) {
 				width={72}
 			/>
 			<p
-				class='-translate-x-1/2 absolute bottom-0 left-1/2 max-w-19 transform text-balance rounded-xs bg-white pt-1 pr-1.75 pb-0.5 pl-1 text-center text-xl/4 group-aria-pressed:bg-orange-50'
+				class='absolute bottom-0 left-1/2 max-w-19 -translate-x-1/2 transform text-balance rounded-xs bg-white pt-1 pr-1.75 pb-0.5 pl-1 text-center text-xl/4 group-aria-pressed:bg-orange-50'
 				classList={{
 					'translate-y-2/3': !selected(),
 					'translate-y-1': Boolean(selected())

@@ -21,11 +21,10 @@ export function PickList({role, selected, setSelected}: PickListProps) {
 				{role}
 			</h2>
 			<div
-				class='flex flex-shrink-0 flex-wrap justify-center gap-x-2'
+				class='flex shrink-0 flex-wrap justify-center gap-x-2'
 				classList={{
-					'md:w-78': role === 'TANK',
-					'md:w-98': role === 'DAMAGE',
-					'md:w-58': role === 'SUPPORT',
+					'md:w-78': role === 'TANK' || role === 'SUPPORT',
+					'md:w-118': role === 'DAMAGE',
 					'gap-y-7': !selected(),
 					'gap-y-2.25': Boolean(selected())
 				}}

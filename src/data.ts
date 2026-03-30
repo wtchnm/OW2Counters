@@ -16,72 +16,72 @@ export const heroes = [
 	{
 		name: 'ASHE',
 		role: 'DAMAGE',
-		counters: ['D.VA', 'WIDOW MAKER', 'LUCIO']
+		counters: ['WINSTON', 'SOJOURN', 'LUCIO']
 	},
 	{
 		name: 'BAPTISTE',
 		role: 'SUPPORT',
-		counters: ['D.VA', 'ECHO', 'ANA']
+		counters: ['SIGMA', 'ECHO', 'LUCIO']
 	},
 	{
 		name: 'BASTION',
 		role: 'DAMAGE',
-		counters: ['SIGMA', 'GENJI', 'ANA']
+		counters: ['SIGMA', 'PHARAH', 'ANA']
 	},
 	{
 		name: 'BRIGITTE',
 		role: 'SUPPORT',
-		counters: ['RAMATTRA', 'PHARAH', 'MOIRA']
+		counters: ['RAMATTRA', 'PHARAH', 'JUNO']
 	},
 	{
 		name: 'CASSIDY',
 		role: 'DAMAGE',
-		counters: ['RAMATTRA', 'ASHE', 'BRIGITTE']
+		counters: ['SIGMA', 'SOJOURN', 'WUYANG']
 	},
 	{
 		name: 'DOOMFIST',
 		role: 'TANK',
-		counters: ['ORISA', 'SOMBRA', 'ZENYATTA']
+		counters: ['ORISA', 'SOMBRA', 'ANA']
 	},
 	{
 		name: 'D.VA',
 		role: 'TANK',
-		counters: ['ZARYA', 'SYMMETRA', 'MOIRA']
+		counters: ['ZARYA', 'SYMMETRA', 'BAPTISTE']
 	},
 	{
 		name: 'ECHO',
 		role: 'DAMAGE',
-		counters: ['D.VA', 'SOLDIER', 'BAPTISTE']
+		counters: ['WINSTON', 'ASHE', 'BAPTISTE']
 	},
 	{
 		name: 'FREJA',
 		role: 'DAMAGE',
-		counters: ['D.VA', 'ASHE', 'ANA']
+		counters: ['WINSTON', 'WIDOW MAKER', 'LUCIO']
 	},
 	{
 		name: 'GENJI',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'SYMMETRA', 'MOIRA']
+		counters: ['ZARYA', 'PHARAH', 'MOIRA']
 	},
 	{
 		name: 'HANZO',
 		role: 'DAMAGE',
-		counters: ['REINHARDT', 'ECHO', 'MERCY']
+		counters: ['WINSTON', 'FREJA', 'LUCIO']
 	},
 	{
 		name: 'HAZARD',
 		role: 'TANK',
-		counters: ['ZARYA', 'ECHO', 'ANA']
+		counters: ['ZARYA', 'PHARAH', 'ANA']
 	},
 	{
 		name: 'ILLARI',
 		role: 'SUPPORT',
-		counters: ['ORISA', 'ASHE', 'KIRIKO']
+		counters: ['WINSTON', 'SOMBRA', 'LUCIO']
 	},
 	{
 		name: 'JUNKER QUEEN',
 		role: 'TANK',
-		counters: ['ZARYA', 'MEI', 'KIRIKO']
+		counters: ['ZARYA', 'SOJOURN', 'KIRIKO']
 	},
 	{
 		name: 'JUNKRAT',
@@ -91,17 +91,17 @@ export const heroes = [
 	{
 		name: 'JUNO',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'ASHE', 'ZENYATTA']
+		counters: ['WINSTON', 'SOMBRA', 'KIRIKO']
 	},
 	{
 		name: 'KIRIKO',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'JUNKRAT', 'ZENYATTA']
+		counters: ['WINSTON', 'SOMBRA', 'BAPTISTE']
 	},
 	{
 		name: 'LIFE WEAVER',
 		role: 'SUPPORT',
-		counters: ['D.VA', 'GENJI', 'ANA']
+		counters: ['WINSTON', 'PHARAH', 'KIRIKO']
 	},
 	{
 		name: 'LUCIO',
@@ -111,82 +111,82 @@ export const heroes = [
 	{
 		name: 'MAUGA',
 		role: 'TANK',
-		counters: ['SIGMA', 'HANZO', 'ANA']
+		counters: ['SIGMA', 'SOJOURN', 'ANA']
 	},
 	{
 		name: 'MEI',
 		role: 'DAMAGE',
-		counters: ['D.VA', 'HANZO', 'KIRIKO']
+		counters: ['ZARYA', 'PHARAH', 'KIRIKO']
 	},
 	{
 		name: 'MERCY',
 		role: 'SUPPORT',
-		counters: ['D.VA', 'CASSIDY', 'BAPTISTE']
+		counters: ['WINSTON', 'SOJOURN', 'BAPTISTE']
 	},
 	{
 		name: 'MOIRA',
 		role: 'SUPPORT',
-		counters: ['DOOMFIST', 'JUNKRAT', 'ANA']
+		counters: ['WINSTON', 'SOJOURN', 'ANA']
 	},
 	{
 		name: 'ORISA',
 		role: 'TANK',
-		counters: ['WINSTON', 'JUNKRAT', 'ANA']
+		counters: ['ZARYA', 'SOJOURN', 'ZENYATTA']
 	},
 	{
 		name: 'PHARAH',
 		role: 'DAMAGE',
-		counters: ['D.VA', 'ASHE', 'BAPTISTE']
+		counters: ['SIGMA', 'ASHE', 'BAPTISTE']
 	},
 	{
 		name: 'RAMATTRA',
 		role: 'TANK',
-		counters: ['ROADHOG', 'REAPER', 'ANA']
+		counters: ['ZARYA', 'REAPER', 'ANA']
 	},
 	{
 		name: 'REAPER',
 		role: 'DAMAGE',
-		counters: ['ORISA', 'PHARAH', 'ANA']
+		counters: ['SIGMA', 'PHARAH', 'ANA']
 	},
 	{
 		name: 'REINHARDT',
 		role: 'TANK',
-		counters: ['RAMATTRA', 'JUNKRAT', 'BAPTISTE']
+		counters: ['RAMATTRA', 'PHARAH', 'BAPTISTE']
 	},
 	{
 		name: 'ROADHOG',
 		role: 'TANK',
-		counters: ['ORISA', 'BASTION', 'ANA']
+		counters: ['SIGMA', 'SOJOURN', 'ANA']
 	},
 	{
 		name: 'SIGMA',
 		role: 'TANK',
-		counters: ['REINHARDT', 'REAPER', 'MOIRA']
+		counters: ['WINSTON', 'SYMMETRA', 'LUCIO']
 	},
 	{
 		name: 'SOJOURN',
 		role: 'DAMAGE',
-		counters: ['ORISA', 'WIDOW MAKER', 'BAPTISTE']
+		counters: ['WINSTON', 'VENDETTA', 'KIRIKO']
 	},
 	{
 		name: 'SOLDIER',
 		role: 'DAMAGE',
-		counters: ['RAMATTRA', 'TRACER', 'BAPTISTE']
+		counters: ['SIGMA', 'SOJOURN', 'BAPTISTE']
 	},
 	{
 		name: 'SOMBRA',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'TORBJORN', 'BRIGITTE']
+		counters: ['WINSTON', 'CASSIDY', 'KIRIKO']
 	},
 	{
 		name: 'SYMMETRA',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'PHARAH', 'MOIRA']
+		counters: ['WINSTON', 'PHARAH', 'LUCIO']
 	},
 	{
 		name: 'TORBJORN',
 		role: 'DAMAGE',
-		counters: ['RAMATTRA', 'MEI', 'ANA']
+		counters: ['ZARYA', 'SOJOURN', 'BAPTISTE']
 	},
 	{
 		name: 'TRACER',
@@ -196,37 +196,67 @@ export const heroes = [
 	{
 		name: 'VENTURE',
 		role: 'DAMAGE',
-		counters: ['D.VA', 'PHARAH', 'ANA']
+		counters: ['ZARYA', 'PHARAH', 'LUCIO']
 	},
 	{
 		name: 'WIDOW MAKER',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'SOMBRA', 'KIRIKO']
+		counters: ['WINSTON', 'SOMBRA', 'LUCIO']
 	},
 	{
 		name: 'WINSTON',
 		role: 'TANK',
-		counters: ['ROADHOG', 'TORBJORN', 'BRIGITTE']
+		counters: ['MAUGA', 'REAPER', 'BRIGITTE']
 	},
 	{
 		name: 'WRECKING BALL',
 		role: 'TANK',
-		counters: ['ORISA', 'CASSIDY', 'ANA']
+		counters: ['SIGMA', 'SOMBRA', 'ANA']
 	},
 	{
 		name: 'WUYANG',
 		role: 'SUPPORT',
-		counters: ['DOOMFIST', 'VENTURE', 'JUNO']
+		counters: ['DOOMFIST', 'SOMBRA', 'KIRIKO']
 	},
 	{
 		name: 'ZARYA',
 		role: 'TANK',
-		counters: ['RAMATTRA', 'BASTION', 'MOIRA']
+		counters: ['WINSTON', 'PHARAH', 'LUCIO']
 	},
 	{
 		name: 'ZENYATTA',
 		role: 'SUPPORT',
-		counters: ['RAMATTRA', 'SOMBRA', 'ANA']
+		counters: ['WINSTON', 'SOMBRA', 'LUCIO']
+	},
+	{
+		name: 'VENDETTA',
+		role: 'DAMAGE',
+		counters: ['ZARYA', 'PHARAH', 'LUCIO']
+	},
+	{
+		name: 'ANRAN',
+		role: 'DAMAGE',
+		counters: ['WINSTON', 'SOJOURN', 'BAPTISTE']
+	},
+	{
+		name: 'DOMINA',
+		role: 'TANK',
+		counters: ['WINSTON', 'SOMBRA', 'LUCIO']
+	},
+	{
+		name: 'EMRE',
+		role: 'DAMAGE',
+		counters: ['WINSTON', 'WIDOW MAKER', 'ANA']
+	},
+	{
+		name: 'JETPACK CAT',
+		role: 'SUPPORT',
+		counters: ['SIGMA', 'ASHE', 'ILLARI']
+	},
+	{
+		name: 'MIZUKI',
+		role: 'SUPPORT',
+		counters: ['DOOMFIST', 'SOMBRA', 'KIRIKO']
 	}
 ] as const satisfies Hero[]
 

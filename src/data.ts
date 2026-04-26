@@ -1,7 +1,7 @@
 export interface Hero {
 	name: string
 	role: (typeof roles)[number]
-	counters: string[]
+	counteredBy: string[]
 }
 
 export const roles = ['TANK', 'DAMAGE', 'SUPPORT'] as const
@@ -11,252 +11,257 @@ export const heroes = [
 	{
 		name: 'ANA',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'SOMBRA', 'KIRIKO']
+		counteredBy: ['WINSTON', 'SOMBRA', 'KIRIKO']
 	},
 	{
 		name: 'ASHE',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'SOJOURN', 'LUCIO']
+		counteredBy: ['WINSTON', 'SOJOURN', 'KIRIKO']
 	},
 	{
 		name: 'BAPTISTE',
 		role: 'SUPPORT',
-		counters: ['SIGMA', 'ECHO', 'LUCIO']
+		counteredBy: ['WINSTON', 'SOLDIER', 'ANA']
 	},
 	{
 		name: 'BASTION',
 		role: 'DAMAGE',
-		counters: ['SIGMA', 'PHARAH', 'ANA']
+		counteredBy: ['SIGMA', 'GENJI', 'ANA']
 	},
 	{
 		name: 'BRIGITTE',
 		role: 'SUPPORT',
-		counters: ['RAMATTRA', 'PHARAH', 'JUNO']
+		counteredBy: ['RAMATTRA', 'PHARAH', 'MOIRA']
 	},
 	{
 		name: 'CASSIDY',
 		role: 'DAMAGE',
-		counters: ['SIGMA', 'SOJOURN', 'WUYANG']
+		counteredBy: ['ORISA', 'GENJI', 'KIRIKO']
 	},
 	{
 		name: 'DOOMFIST',
 		role: 'TANK',
-		counters: ['ORISA', 'SOMBRA', 'ANA']
+		counteredBy: ['ORISA', 'SOMBRA', 'ANA']
 	},
 	{
 		name: 'D.VA',
 		role: 'TANK',
-		counters: ['ZARYA', 'SYMMETRA', 'BAPTISTE']
+		counteredBy: ['ZARYA', 'SYMMETRA', 'ZENYATTA']
 	},
 	{
 		name: 'ECHO',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'ASHE', 'BAPTISTE']
+		counteredBy: ['D.VA', 'ASHE', 'BAPTISTE']
 	},
 	{
 		name: 'FREJA',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'WIDOW MAKER', 'LUCIO']
+		counteredBy: ['RAMATTRA', 'WIDOW MAKER', 'BAPTISTE']
 	},
 	{
 		name: 'GENJI',
 		role: 'DAMAGE',
-		counters: ['ZARYA', 'PHARAH', 'MOIRA']
+		counteredBy: ['ZARYA', 'SYMMETRA', 'MOIRA']
 	},
 	{
 		name: 'HANZO',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'FREJA', 'LUCIO']
+		counteredBy: ['WINSTON', 'GENJI', 'KIRIKO']
 	},
 	{
 		name: 'HAZARD',
 		role: 'TANK',
-		counters: ['ZARYA', 'PHARAH', 'ANA']
+		counteredBy: ['REINHARDT', 'PHARAH', 'ANA']
 	},
 	{
 		name: 'ILLARI',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'SOMBRA', 'LUCIO']
+		counteredBy: ['WINSTON', 'SOMBRA', 'LUCIO']
 	},
 	{
 		name: 'JUNKER QUEEN',
 		role: 'TANK',
-		counters: ['ZARYA', 'SOJOURN', 'KIRIKO']
+		counteredBy: ['ORISA', 'SOJOURN', 'KIRIKO']
 	},
 	{
 		name: 'JUNKRAT',
 		role: 'DAMAGE',
-		counters: ['SIGMA', 'PHARAH', 'BAPTISTE']
+		counteredBy: ['SIGMA', 'ECHO', 'BAPTISTE']
 	},
 	{
 		name: 'JUNO',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'SOMBRA', 'KIRIKO']
+		counteredBy: ['RAMATTRA', 'SOMBRA', 'BAPTISTE']
 	},
 	{
 		name: 'KIRIKO',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'SOMBRA', 'BAPTISTE']
+		counteredBy: ['WINSTON', 'SOMBRA', 'BAPTISTE']
 	},
 	{
 		name: 'LIFE WEAVER',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'PHARAH', 'KIRIKO']
+		counteredBy: ['DOOMFIST', 'PHARAH', 'KIRIKO']
 	},
 	{
 		name: 'LUCIO',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'SOMBRA', 'MOIRA']
+		counteredBy: ['WINSTON', 'SOMBRA', 'MOIRA']
 	},
 	{
 		name: 'MAUGA',
 		role: 'TANK',
-		counters: ['SIGMA', 'SOJOURN', 'ANA']
+		counteredBy: ['SIGMA', 'SIERRA', 'ANA']
 	},
 	{
 		name: 'MEI',
 		role: 'DAMAGE',
-		counters: ['ZARYA', 'PHARAH', 'KIRIKO']
+		counteredBy: ['ZARYA', 'PHARAH', 'KIRIKO']
 	},
 	{
 		name: 'MERCY',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'SOJOURN', 'BAPTISTE']
+		counteredBy: ['RAMATTRA', 'SOJOURN', 'BAPTISTE']
 	},
 	{
 		name: 'MOIRA',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'SOJOURN', 'ANA']
+		counteredBy: ['WINSTON', 'SOMBRA', 'ANA']
 	},
 	{
 		name: 'ORISA',
 		role: 'TANK',
-		counters: ['ZARYA', 'SOJOURN', 'ZENYATTA']
+		counteredBy: ['WINSTON', 'SOJOURN', 'ZENYATTA']
 	},
 	{
 		name: 'PHARAH',
 		role: 'DAMAGE',
-		counters: ['SIGMA', 'ASHE', 'BAPTISTE']
+		counteredBy: ['D.VA', 'ASHE', 'BAPTISTE']
 	},
 	{
 		name: 'RAMATTRA',
 		role: 'TANK',
-		counters: ['ZARYA', 'REAPER', 'ANA']
+		counteredBy: ['ZARYA', 'REAPER', 'ANA']
 	},
 	{
 		name: 'REAPER',
 		role: 'DAMAGE',
-		counters: ['SIGMA', 'PHARAH', 'ANA']
+		counteredBy: ['SIGMA', 'PHARAH', 'ANA']
 	},
 	{
 		name: 'REINHARDT',
 		role: 'TANK',
-		counters: ['RAMATTRA', 'PHARAH', 'BAPTISTE']
+		counteredBy: ['RAMATTRA', 'JUNKRAT', 'BAPTISTE']
 	},
 	{
 		name: 'ROADHOG',
 		role: 'TANK',
-		counters: ['SIGMA', 'SOJOURN', 'ANA']
+		counteredBy: ['ORISA', 'SIERRA', 'ANA']
 	},
 	{
 		name: 'SIGMA',
 		role: 'TANK',
-		counters: ['WINSTON', 'SYMMETRA', 'LUCIO']
+		counteredBy: ['ZARYA', 'SYMMETRA', 'ANA']
 	},
 	{
 		name: 'SOJOURN',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'VENDETTA', 'KIRIKO']
+		counteredBy: ['WINSTON', 'VENDETTA', 'KIRIKO']
 	},
 	{
 		name: 'SOLDIER',
 		role: 'DAMAGE',
-		counters: ['SIGMA', 'SOJOURN', 'BAPTISTE']
+		counteredBy: ['SIGMA', 'SOJOURN', 'BAPTISTE']
 	},
 	{
 		name: 'SOMBRA',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'CASSIDY', 'KIRIKO']
+		counteredBy: ['WINSTON', 'CASSIDY', 'KIRIKO']
 	},
 	{
 		name: 'SYMMETRA',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'PHARAH', 'LUCIO']
+		counteredBy: ['WINSTON', 'PHARAH', 'LUCIO']
 	},
 	{
 		name: 'TORBJORN',
 		role: 'DAMAGE',
-		counters: ['ZARYA', 'SOJOURN', 'BAPTISTE']
+		counteredBy: ['RAMATTRA', 'SOJOURN', 'BAPTISTE']
 	},
 	{
 		name: 'TRACER',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'CASSIDY', 'BRIGITTE']
+		counteredBy: ['WINSTON', 'CASSIDY', 'BRIGITTE']
 	},
 	{
 		name: 'VENTURE',
 		role: 'DAMAGE',
-		counters: ['ZARYA', 'PHARAH', 'LUCIO']
+		counteredBy: ['ZARYA', 'PHARAH', 'LUCIO']
 	},
 	{
 		name: 'WIDOW MAKER',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'SOMBRA', 'LUCIO']
+		counteredBy: ['WINSTON', 'SOMBRA', 'KIRIKO']
 	},
 	{
 		name: 'WINSTON',
 		role: 'TANK',
-		counters: ['MAUGA', 'REAPER', 'BRIGITTE']
+		counteredBy: ['MAUGA', 'REAPER', 'BRIGITTE']
 	},
 	{
 		name: 'WRECKING BALL',
 		role: 'TANK',
-		counters: ['SIGMA', 'SOMBRA', 'ANA']
+		counteredBy: ['ORISA', 'SOMBRA', 'ANA']
 	},
 	{
 		name: 'WUYANG',
 		role: 'SUPPORT',
-		counters: ['DOOMFIST', 'SOMBRA', 'KIRIKO']
+		counteredBy: ['DOOMFIST', 'SOMBRA', 'ZENYATTA']
 	},
 	{
 		name: 'ZARYA',
 		role: 'TANK',
-		counters: ['WINSTON', 'PHARAH', 'LUCIO']
+		counteredBy: ['WINSTON', 'PHARAH', 'LUCIO']
 	},
 	{
 		name: 'ZENYATTA',
 		role: 'SUPPORT',
-		counters: ['WINSTON', 'SOMBRA', 'LUCIO']
+		counteredBy: ['WINSTON', 'SOMBRA', 'LUCIO']
 	},
 	{
 		name: 'VENDETTA',
 		role: 'DAMAGE',
-		counters: ['ZARYA', 'PHARAH', 'LUCIO']
+		counteredBy: ['REINHARDT', 'PHARAH', 'BRIGITTE']
 	},
 	{
 		name: 'ANRAN',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'SOJOURN', 'BAPTISTE']
+		counteredBy: ['SIGMA', 'SOJOURN', 'BAPTISTE']
 	},
 	{
 		name: 'DOMINA',
 		role: 'TANK',
-		counters: ['WINSTON', 'SOMBRA', 'LUCIO']
+		counteredBy: ['MAUGA', 'SOMBRA', 'LUCIO']
 	},
 	{
 		name: 'EMRE',
 		role: 'DAMAGE',
-		counters: ['WINSTON', 'WIDOW MAKER', 'ANA']
+		counteredBy: ['WINSTON', 'WIDOW MAKER', 'ANA']
 	},
 	{
 		name: 'JETPACK CAT',
 		role: 'SUPPORT',
-		counters: ['SIGMA', 'ASHE', 'ILLARI']
+		counteredBy: ['D.VA', 'ASHE', 'BAPTISTE']
 	},
 	{
 		name: 'MIZUKI',
 		role: 'SUPPORT',
-		counters: ['DOOMFIST', 'SOMBRA', 'KIRIKO']
+		counteredBy: ['ORISA', 'SOMBRA', 'KIRIKO']
+	},
+	{
+		name: 'SIERRA',
+		role: 'DAMAGE',
+		counteredBy: ['ZARYA', 'VENTURE', 'KIRIKO']
 	}
 ] as const satisfies Hero[]
 

@@ -9,7 +9,7 @@ interface CounterPickListProps {
 export function CounterPickList({hero}: CounterPickListProps) {
 	const countersByRole = createMemo(() => {
 		const map = new Map<Role, string>()
-		for (const counterName of hero().counters) {
+		for (const counterName of hero().counteredBy) {
 			const counterHero = getHeroByName(counterName)
 			if (counterHero) {
 				map.set(counterHero.role, counterHero.name)
